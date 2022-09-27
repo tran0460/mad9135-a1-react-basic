@@ -1,0 +1,15 @@
+.input-container {
+  min-width: 18rem;
+  max-width: 30rem;
+  width: 40%;
+  margin: 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.input-field {
+  width: 100%;
+  border: none;
+  padding: 1rem 1.5rem;
+  box-sizing: border-box;
+  outline: none;
+}
