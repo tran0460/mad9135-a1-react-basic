@@ -7,6 +7,10 @@
   border-radius: 1rem;
   cursor: pointer;
 }
+.item-container:hover {
+  transition: transform 0.3s;
+  transform: translateY(-5%);
+}
 
 .card-image {
   width: 20rem;
