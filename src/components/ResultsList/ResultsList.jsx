@@ -7,7 +7,7 @@ const ResultsList = (props) => {
   if (!results) return;
   return (
     <div className={styles["list-container"]}>
-      <h2>Search Results</h2>
+      <h2 className={styles["list-title"]}>Search Results</h2>
       <div className={styles["items-container"]}>
         {results.map((item) => {
           return <ListItem key={item.id} data={item} />;
