@@ -8,9 +8,11 @@ const ResultsList = (props) => {
   return (
     <div className={styles["list-container"]}>
       <h2>Search Results</h2>
-      {results.map((item) => {
-        return <ListItem key={item.id} data={item} />;
-      })}
+      <div className={styles["items-container"]}>
+        {results.map((item) => {
+          return <ListItem key={item.id} data={item} />;
+        })}
+      </div>
     </div>
   );
 };

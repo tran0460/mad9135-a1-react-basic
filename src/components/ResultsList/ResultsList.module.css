@@ -5,3 +5,22 @@
   align-items: center;
   gap: 3rem;
 }
+
+.items-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .list-container {
+    max-width: 80%;
+  }
+  .items-container {
+    flex-direction: row;
+  }
+}
