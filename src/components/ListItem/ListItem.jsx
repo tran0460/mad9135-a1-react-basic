@@ -2,9 +2,9 @@ import React from "react";
 import styles from "./ListItem.module.css";
 
 const ListItem = (props) => {
-  const { data } = props;
+  const { data, onListItemClick } = props;
   return (
-    <div className={styles["item-container"]}>
+    <div className={styles["item-container"]} onClick={onListItemClick}>
       <img
         className={styles["card-image"]}
         src={data.avatar_url}
