@@ -42,14 +42,14 @@ const Main = () => {
     content: {
       display: "flex",
       justifyContent: "center",
-      alignItems: "flex-end",
       background: "#fff",
       scrollbar: "none",
-      padding: "10px",
+      padding: "16px",
       border: "none",
       borderRadius: "16px",
       width: "fit-content",
       height: "fit-content",
+      margin: "auto 0",
     },
   };
 
