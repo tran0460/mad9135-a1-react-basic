@@ -3,13 +3,15 @@ import styles from "./Searchbar.module.css";
 import MagnifyingGlass from "../../assets/Icons/MagnifyingGlass";
 
 const Searchbar = (props) => {
-  const { onSearch } = props;
+  const { onSearch, query, setQuery } = props;
   return (
     <div className={styles["input-container"]}>
       <input
         className={styles["input-field"]}
         type="text"
         placeholder="Search bar"
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
       />
       <span className={styles["icon-container"]} onClick={() => onSearch()}>
         <MagnifyingGlass color={"#000"} size={24} />
