@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import ResultsList from "../ResultsList/ResultsList";
 import Searchbar from "../Searchbar/Searchbar";
 import styles from "./Main.module.css";
 
@@ -17,11 +18,11 @@ const Main = () => {
   useEffect(() => {
     if (!data) return;
     setResults(data.items);
-    console.log(results);
   }, [data]);
   return (
     <div className={styles["main-container"]}>
       <Searchbar query={query} setQuery={setQuery} onSearch={getData} />
+      <ResultsList results={results} />
     </div>
   );
 };
