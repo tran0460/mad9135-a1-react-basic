@@ -1,5 +1,5 @@
 .header-container {
-  width: 90%;
+  width: 100%;
   background-color: #fff;
   z-index: 99;
   height: 100%;
@@ -8,4 +8,5 @@
   justify-content: center;
   margin: 0 auto;
   padding: 2rem 0;
+  box-shadow: 0 0 0.75rem rgba(77, 77, 77, 0.2);
 }
