@@ -12,6 +12,9 @@ const Searchbar = (props) => {
         placeholder="Search bar"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
+        onKeyDown={(e) => {
+          if (e.key === "Enter") return onSearch();
+        }}
       />
       <span className={styles["icon-container"]} onClick={() => onSearch()}>
         <MagnifyingGlass color={"#000"} size={24} />
