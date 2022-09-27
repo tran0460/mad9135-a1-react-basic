@@ -1,4 +1,5 @@
 import React from "react";
+import ListItem from "../ListItem/ListItem";
 import styles from "./ResultsList.module.css";
 
 const ResultsList = (props) => {
@@ -8,7 +9,7 @@ const ResultsList = (props) => {
     <div className={styles["list-container"]}>
       <h2>Search Results</h2>
       {results.map((item) => {
-        return <div key={item.id}>{item.login}</div>;
+        return <ListItem key={item.id} data={item} />;
       })}
     </div>
   );
