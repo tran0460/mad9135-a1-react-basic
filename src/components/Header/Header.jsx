@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <div className={styles["header-container"]}>
       <GithubCatDark size={64} />
-      <h1>Github User Finder</h1>
+      <h1>Git Finder</h1>
     </div>
   );
 };
