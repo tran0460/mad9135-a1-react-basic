@@ -4,7 +4,6 @@ import styles from "./ModalContent.module.css";
 const ModalContent = (props) => {
   const { data } = props;
   if (!data) return;
-  console.log(data);
   return (
     <div className={styles["modal-content-container"]}>
       <img className={styles["modal-image"]} src={data.avatar_url} alt="" />
