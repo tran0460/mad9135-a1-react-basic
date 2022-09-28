@@ -49,7 +49,7 @@ const Main = () => {
       borderRadius: "16px",
       width: "fit-content",
       height: "fit-content",
-      margin: "auto 0",
+      margin: "auto",
     },
   };
 
