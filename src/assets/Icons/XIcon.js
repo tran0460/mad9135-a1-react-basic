@@ -6,11 +6,13 @@ const XIcon = (props) => {
     <svg
       width={size}
       height={size}
+      strokeWidth={1.5}
       fill="none"
-      xmlns="http://www.w3.org/2000/svg">
+      xmlns="http://www.w3.org/2000/svg"
+      color="#000">
       <path
-        d="m8 8 3.496 3.495m-6.99 0L8 8l-3.495 3.495Zm6.99-6.99L8.001 8l3.495-3.495ZM8.001 8 4.506 4.505 8 8Z"
-        stroke="#4D4D4D"
+        d="M6.758 17.243 12.001 12m5.243-5.243L12 12m0 0L6.758 6.757M12.001 12l5.243 5.243"
+        stroke="#000"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
