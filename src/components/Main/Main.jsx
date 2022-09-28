@@ -65,7 +65,12 @@ const Main = () => {
         }}
         style={modalStyles}
         contentLabel="Example Modal">
-        <ModalContent data={currentItem} />
+        <ModalContent
+          onRequestClose={() => {
+            setModalVisible(false);
+          }}
+          data={currentItem}
+        />
       </Modal>
     </div>
   );
