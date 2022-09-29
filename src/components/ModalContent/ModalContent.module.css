@@ -5,12 +5,17 @@
   gap: 1.5rem;
   max-width: 25rem;
 }
+.modal-content-container > p {
+  margin: 0;
+  font-size: 1.3rem;
+}
 .close-button {
   display: flex;
   align-items: center;
   align-self: flex-end;
   margin-bottom: -0.5rem;
-  font-size: 0.9rem;
+  font-size: 1rem !important;
+  cursor: pointer;
 }
 .modal-image {
   width: 100%;
@@ -18,21 +23,32 @@
 }
 
 .modal-user-name {
-  font-size: 1.8rem;
+  font-size: 2rem !important;
+  font-weight: 600;
   white-space: nowrap;
   margin: 0;
 }
 
 .modal-bio {
   text-align: center;
-  width: fit-content;
+  width: 100%;
   margin: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 
 .modal-social-info {
   margin: 0;
 }
 
+.modal-link {
+  color: #000;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+}
 @media only screen and (min-width: 768px) {
   .modal-content-container {
     max-width: 35rem;
