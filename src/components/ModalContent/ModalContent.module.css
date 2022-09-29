@@ -8,6 +8,11 @@
 .modal-content-container > p {
   margin: 0;
   font-size: 1.3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 }
 .close-button {
   display: flex;
@@ -31,7 +36,6 @@
 
 .modal-bio {
   text-align: center;
-  width: 100%;
   margin: 0;
   white-space: pre-wrap;
   word-wrap: break-word;
