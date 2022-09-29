@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./ModalContent.module.css";
 import XIcon from "../../assets/Icons/XIcon";
 import { GithubCatDark } from "../../logoHelper";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
 const ModalContent = (props) => {
   const { data, onRequestClose } = props;
   if (!data) return;
@@ -13,7 +14,10 @@ const ModalContent = (props) => {
       </span>
       <img className={styles["modal-image"]} src={data.avatar_url} alt="" />
       <p className={styles["modal-user-name"]}>{data.name}</p>
-      <p style={{ display: data.location ? "" : "none" }}>{data.location}</p>
+      <p style={{ display: data.location ? "" : "none" }}>
+        <LocationOnIcon />
+        {data.location}
+      </p>
       <p style={{ display: data.company ? "" : "none" }}>{data.company}</p>
       <p
         style={{ display: data.bio ? "" : "none" }}
